@@ -1,0 +1,45 @@
+{
+  "name": "create-nike-app",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "bin": {
+    "create-nike-app": "index.js"
+  },
+  "scripts": {
+    "release": "standard-version && git push --follow-tags && npm publish"
+  },
+  "files": [
+    "index.js",
+    "template-*"
+  ],
+  "keywords": [
+    "vue",
+    "vite",
+    "react",
+    "preact",
+    "taro",
+    "flutter"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tomieric/create-nike-app.git"
+  },
+  "author": "tomieric",
+  "license": "MIT",
+  "publishConfig": {
+    "access": "public"
+  },
+  "dependencies": {
+    "chalk": "^4.1.0",
+    "commander": "^6.2.0",
+    "figlet": "^1.5.0",
+    "fs-extra": "^9.0.1",
+    "globby": "^11.0.1",
+    "inquirer": "^7.3.3",
+    "minimist": "^1.2.5"
+  },
+  "devDependencies": {
+    "standard-version": "^9.0.0"
+  }
+}
