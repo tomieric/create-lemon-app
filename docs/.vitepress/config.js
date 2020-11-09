@@ -30,12 +30,12 @@ module.exports = {
         {
           text: '起步',
           link: '/',
-          children: [
-            { text: 'Index', link: '/guide/' },
-            { text: 'Getting Started', link: '/guide/getting-started' },
-            { text: 'Guide Content', link: '/guide/guide-content' },
-            { text: 'Content', link: '/guide/content' },
-          ]
+          // children: [
+          //   { text: 'Index', link: '/guide/' },
+          //   { text: 'Getting Started', link: '/guide/getting-started' },
+          //   { text: 'Guide Content', link: '/guide/guide-content' },
+          //   { text: 'Content', link: '/guide/content' },
+          // ]
         }
       ],
       '/templates/': [
@@ -63,7 +63,7 @@ module.exports = {
           },
           {
             text: 'Release Notes',
-            link: 'https://github.com/tomieric/create-nike-app/releases'
+            link: 'https://github.com/tomieric/create-nike-app/blob/master/CHANGELOG.md'
           }
         ],
         sidebar: {
@@ -71,12 +71,12 @@ module.exports = {
             {
               text: 'Get Started',
               link: '/en/',
-              children: [
-                { text: 'Index', link: '/en/guide/' },
-                { text: 'Getting Started', link: '/en/guide/getting-started' },
-                { text: 'Guide Content', link: '/en/guide/guide-content' },
-                { text: 'Content', link: '/en/guide/content' },
-              ]
+              // children: [
+              //   { text: 'Index', link: '/en/guide/' },
+              //   { text: 'Getting Started', link: '/en/guide/getting-started' },
+              //   { text: 'Guide Content', link: '/en/guide/guide-content' },
+              //   { text: 'Content', link: '/en/guide/content' },
+              // ]
             }
           ],
           '/en/templates/': [

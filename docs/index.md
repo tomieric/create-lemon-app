@@ -1,28 +1,15 @@
----
-home: true
-heroImage: /images/nike-logo.png
-actionText: Get Started →
-actionLink: /guide/
-footer: MIT Licensed | Copyright © 2020-present tommyshao
-sidebarDepth: 0
----
-
 # create-nike-app
 
-:::tip 标题
-内容
-:::
+按照预设模板快速创建前端项目，参考 [create-vite-app](https://github.com/vitejs/create-vite-app), 整合 `vue-cli` 可配置对话模式。
 
-:::warning 标题
-内容
-:::
+## 创建项目
 
-:::danger 标题
-内容
-:::
+```bash
+$ yarn create nike-app my-demo
+```
 
-```javascript
-<template>
-  <div class="wrap"></div>
-</template>
+或
+
+```bash
+$ npm init create-nike-app my-demo
 ```
