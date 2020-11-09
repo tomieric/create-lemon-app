@@ -5,3 +5,5 @@ dist
 
 yarn-error.log
 test
+list
+.vitepress/dist

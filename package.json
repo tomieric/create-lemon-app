@@ -7,6 +7,7 @@
     "create-nike-app": "index.js"
   },
   "scripts": {
+    "deploy": "cd docs && npm install && npm run build",
     "release": "standard-version && git push --follow-tags && npm publish"
   },
   "files": [
@@ -33,6 +34,8 @@
   "dependencies": {
     "chalk": "^4.1.0",
     "commander": "^6.2.0",
+    "debug": "^4.2.0",
+    "ejs": "^3.1.5",
     "figlet": "^1.5.0",
     "fs-extra": "^9.0.1",
     "globby": "^11.0.1",

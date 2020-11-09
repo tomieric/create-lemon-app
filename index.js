@@ -1,13 +1,16 @@
 #!/usr/bin/env node
-const figlet = require('figlet')
-const chalk = require('chalk')
-const path = require('path')
-const fs = require('fs-extra')
-const program = require('commander')
-const globby = require('globby')
+const figlet   = require('figlet')
+const chalk    = require('chalk')
+const path     = require('path')
+const fs       = require('fs-extra')
+const program  = require('commander')
+const globby   = require('globby')
 const inquirer = require('inquirer')
-const argv = require('minimist')(process.argv.slice(2))
-const appPkg = require('./package.json')
+const debug    = require('debug')
+const ejs      = require('ejs')
+const argv     = require('minimist')(process.argv.slice(2))
+const appPkg   = require('./package.json')
+const { basename } = require('path')
 
 const slogan = figlet.textSync('NIKE', {
   font: 'ANSI Shadow',
@@ -21,6 +24,7 @@ async function main () {
   const renameFiles = {
     _gitignore: '.gitignore'
   }
+  let options = { projectName: path.basename(root) }
 
   console.log()
   console.log(chalk.bold.rgb(255, 0, 23)(slogan))
@@ -43,38 +47,44 @@ async function main () {
 
   const templateDir = path.join(
     __dirname,
+    'preset',
     `template-${argv.t || argv.template || 'vue'}`
   )
   
   // @TODO: 使用 ejs 模板替换
-  const write = async (file, content) => {
+  const writeFile = async (file, options, ejsOptions = {}) => {
+    debug('file：', file)
     const targetPath = renameFiles[file]
       ? path.join(root, renameFiles[file])
       : path.join(root, file)
 
-    if (content) {
-      await fs.writeFile(targetPath, content)
-    } else {
-      await fs.copy(path.join(templateDir, file), targetPath)
-    }
+    const content = fs.readFileSync(
+      path.join(templateDir, file),
+      'utf-8'
+    )
+
+    const result = ejs.render(content, options, ejsOptions)
+    fs.ensureFileSync(targetPath)
+    await fs.writeFile(targetPath, result)
   }
 
   // 模板配置
   if (fs.existsSync(path.join(templateDir, 'prompts.js'))) {
     const prompts = require(path.join(templateDir, 'prompts.js'))
-    const options = await inquirer.prompt(prompts || [])
-    console.log(options)
+    options = Object.assign(
+      options,
+      await inquirer.prompt(prompts || [])
+    )
   }
 
-  const files = await fs.readdir(templateDir)
+  debug('用户配置：', options)
 
-  for (const file of files.filter(f => f !== 'package.json')) {
-    await write(file)
+  // const files = await fs.readdir(templateDir)
+  const files = await globby([templateDir + '/**/**'])
+
+  for (const file of files) {
+    await writeFile(file.replace(templateDir + '/', ''), options)
   }
-
-  const pkg = require(path.join(templateDir, 'package.json'))
-  pkg.name = path.basename(root)
-  await write('package.json', JSON.stringify(pkg, null, 2))
 
   console.log(chalk.green('\n🌈 创建完成 \n'))
 
@@ -88,8 +98,9 @@ async function main () {
 }
 
 async function showTemplateList () {
-  const paths = await globby(['template-*/**'])
+  let paths = await globby(['preset/template-*/package.json'])
   const icons = ['🔴', '🟡', '🟢', '🔵', '🟣']
+  debug('预设目录', paths)
   paths.forEach((p, index) => {
     console.log([
       '   ',
@@ -109,7 +120,9 @@ program
     console.log(chalk.green('\n yarn create nike-app <template> \n'))
   })
   .action((cmd) => {
-    if (cmd.args[0] && cmd.args[0] === 'list') {
+    debug('cmd：%o', cmd)
+
+    if (cmd.list) {
       showTemplateList()
     } else {
       main().catch((error) => {

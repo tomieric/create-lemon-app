@@ -1,5 +1,10 @@
 module.exports = [
   {
+    name: 'title',
+    type: 'input',
+    message: '项目名称'
+  },
+  {
     name: 'cssPreprocessor',
     type: 'list',
     message: '请选择预处理器',
