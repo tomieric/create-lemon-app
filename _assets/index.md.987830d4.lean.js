@@ -1,0 +1,1 @@
+import{g as e,f as a,C as r}from"./common-dca46cb9.js";const t='{"title":"create-nike-app","frontmatter":{},"headers":[{"level":2,"title":"创建项目","slug":"创建项目"}],"relativePath":"index.md","lastUpdated":1604933590863.5244}';var n={};const p=r('',6);n.render=function(r,t,n,c,i,d){return a(),e("div",null,[p])};export default n;export{t as __pageData};
