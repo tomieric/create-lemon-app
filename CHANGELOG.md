@@ -7,4 +7,4 @@ All notable changes to this project will be documented in this file. See [standa
 
 ### Features
 
-* 增加模板 ([b0fc73d](https://github.com/tomieric/create-nike-app/commit/b0fc73d838e554ddf1e71df75f0cada5a1ee71e8))
+* 增加模板 ([b0fc73d](https://github.com/tomieric/create-nice-app/commit/b0fc73d838e554ddf1e71df75f0cada5a1ee71e8))

@@ -1,10 +1,10 @@
-# create-nike-app
+# create-nice-app
 
-Create an app inspired by [create-vite-app](https://github.com/vitejs/create-vite-app),the `nike` just a name about my favorite brand.
+Create an app inspired by [create-vite-app](https://github.com/vitejs/create-vite-app)
 
 
 ```
-$ yarn create nike-app <project-name>
+$ yarn create nice-app <project-name>
 $ cd <project-name>
 $ yarn
 $ yarn dev
@@ -31,7 +31,7 @@ template list:
 To scaffold with specific template:
 
 ```
-yarn create nike-app --template vite
+yarn create nice-app --template vite
 ```
 
 ---

@@ -1,25 +1,25 @@
-# create-nike-app
+# create-nice-app
 
 按照预设模板快速创建前端项目，参考 [create-vite-app](https://github.com/vitejs/create-vite-app), 整合 `vue-cli` 可配置对话模式。
 
 ## 创建项目
 
 ```bash
-$ yarn create nike-app my-demo
+$ yarn create nice-app my-demo
 ```
 
 或
 
 ```bash
-$ npm init create-nike-app my-demo
+$ npm init create-nice-app my-demo
 ```
 
 ### 命令
 
 ```bash
-$ yarn create nike-app --help
+$ yarn create nice-app --help
 
-Usage: index yarn create nike-app <template>
+Usage: index yarn create nice-app <template>
 
 Options:
   -V, --version              output the version number
@@ -28,13 +28,13 @@ Options:
   -f, --force                强制创建项目
   -h, --help                 display help for command
 
- yarn create nike-app <template> 
+ yarn create nice-app <template> 
 ```
 
 ### 按模板创建项目
 
 ```bash
-$ yarn create nike-app -t react
+$ yarn create nice-app -t react
 ```
 
 ### 强制覆盖
@@ -44,5 +44,5 @@ $ yarn create nike-app -t react
 :::
 
 ```bash
-$ yarn create nike-app -f my-demo
+$ yarn create nice-app -f my-demo
 ```

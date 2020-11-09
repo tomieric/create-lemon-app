@@ -1,12 +1,12 @@
 const isProd = process.env.NODE_ENV === 'production'
 module.exports = {
-  title: "create-nike-app",
+  title: "create-nice-app",
   description: "前端项目脚手架模板",
-  base: isProd ? '/create-nike-app' : '',
+  base: isProd ? '/create-nice-app' : '',
   assetsDir: '',
   themeConfig: {
-    repo: 'tomieric/create-nike-app',
-    logo: '/images/nike-logo.png',
+    repo: 'tomieric/create-nice-app',
+    logo: '/images/logo.png',
     docsDir: 'docs',
     search: true,
 
@@ -21,7 +21,7 @@ module.exports = {
       },
       {
         text: 'Release Notes',
-        link: 'https://github.com/tomieric/create-nike-app/releases'
+        link: 'https://github.com/tomieric/create-nice-app/releases'
       }
     ],
 
@@ -63,7 +63,7 @@ module.exports = {
           },
           {
             text: 'Release Notes',
-            link: 'https://github.com/tomieric/create-nike-app/blob/master/CHANGELOG.md'
+            link: 'https://github.com/tomieric/create-nice-app/blob/master/CHANGELOG.md'
           }
         ],
         sidebar: {
@@ -123,12 +123,12 @@ module.exports = {
   locales: {
     '/': {
       lang: 'zh-CN',
-      title: 'create-nike-app',
+      title: 'create-nice-app',
       description: '快速创建前端项目'
     },
     '/en/': {
       lang: 'en-US',
-      title: 'create-nike-app',
+      title: 'create-nice-app',
       description: 'Quick to create an app'
     }
   }
