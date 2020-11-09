@@ -2,7 +2,7 @@
 
 支持一下项目模板：
 
-- [ ] vue(default)
+- [x] vue(default)
 - [ ] vite
 - [ ] vite-component
 - [ ] vue-component
