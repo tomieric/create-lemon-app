@@ -1,11 +1,11 @@
 const isProd = process.env.NODE_ENV === 'production'
 module.exports = {
-  title: "create-soda-app",
+  title: "create-lemon-app",
   description: "前端项目脚手架模板",
-  base: isProd ? '/create-soda-app' : '',
+  base: isProd ? '/create-lemon-app' : '',
   assetsDir: '',
   themeConfig: {
-    repo: 'tomieric/create-soda-app',
+    repo: 'tomieric/create-lemon-app',
     logo: '/images/logo.png',
     docsDir: 'docs',
     search: true,
@@ -21,7 +21,7 @@ module.exports = {
       },
       {
         text: 'Release Notes',
-        link: 'https://github.com/tomieric/create-soda-app/releases'
+        link: 'https://github.com/tomieric/create-lemon-app/releases'
       }
     ],
 
@@ -63,7 +63,7 @@ module.exports = {
           },
           {
             text: 'Release Notes',
-            link: 'https://github.com/tomieric/create-soda-app/blob/master/CHANGELOG.md'
+            link: 'https://github.com/tomieric/create-lemon-app/blob/master/CHANGELOG.md'
           }
         ],
         sidebar: {
@@ -123,12 +123,12 @@ module.exports = {
   locales: {
     '/': {
       lang: 'zh-CN',
-      title: 'create-soda-app',
+      title: 'create-lemon-app',
       description: '快速创建前端项目'
     },
     '/en/': {
       lang: 'en-US',
-      title: 'create-soda-app',
+      title: 'create-lemon-app',
       description: 'Quick to create an app'
     }
   }

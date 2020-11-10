@@ -12,7 +12,7 @@ const argv     = require('minimist')(process.argv.slice(2))
 const appPkg   = require('./package.json')
 const { basename } = require('path')
 
-const slogan = figlet.textSync('SODA', {
+const slogan = figlet.textSync('LEMON', {
   font: 'ANSI Shadow',
   horizontalLayout: 'full'
 })
@@ -27,7 +27,7 @@ async function main () {
   let options = { projectName: path.basename(root) }
 
   console.log()
-  console.log(chalk.bold.rgb(255, 0, 23)(slogan))
+  console.log(chalk.bold.rgb(62, 175, 124)(slogan))
 
   console.log(chalk.cyan(`🚀 正在创建工程 ${root}...`))
 
@@ -112,12 +112,12 @@ async function showTemplateList () {
 
 program
   .version(`${appPkg.version}`)
-  .usage(chalk.bold('yarn create soda-app <template>'))
+  .usage(chalk.bold('yarn create lemon-app <template>'))
   .option('-t, --template <template>', '选择模板创建')
   .option('-l, --list', '显示支持的模板')
   .option('-f, --force', '强制创建项目')
   .on('--help', () => {
-    console.log(chalk.green('\n yarn create soda-app <template> \n'))
+    console.log(chalk.green('\n yarn create lemon-app <template> \n'))
   })
   .action((cmd) => {
     debug('cmd：%o', cmd)

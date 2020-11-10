@@ -1,10 +1,10 @@
-# create-soda-app
+# create-lemon-app
 
 Create an app inspired by [create-vite-app](https://github.com/vitejs/create-vite-app)
 
 
 ```
-$ yarn create soda-app <project-name>
+$ yarn create lemon-app <project-name>
 $ cd <project-name>
 $ yarn
 $ yarn dev
@@ -31,7 +31,7 @@ template list:
 To scaffold with specific template:
 
 ```
-yarn create soda-app --template vite
+yarn create lemon-app --template vite
 ```
 
 ---

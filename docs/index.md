@@ -1,25 +1,25 @@
-# create-soda-app
+# create-lemon-app
 
 按照预设模板快速创建前端项目，参考 [create-vite-app](https://github.com/vitejs/create-vite-app), 整合 `vue-cli` 可配置对话模式。
 
 ## 创建项目
 
 ```bash
-$ yarn create soda-app my-demo
+$ yarn create lemon-app my-demo
 ```
 
 或
 
 ```bash
-$ npm init create-soda-app my-demo
+$ npm init create-lemon-app my-demo
 ```
 
 ### 命令
 
 ```bash
-$ yarn create soda-app --help
+$ yarn create lemon-app --help
 
-Usage: index yarn create soda-app <template>
+Usage: index yarn create lemon-app <template>
 
 Options:
   -V, --version              output the version number
@@ -28,13 +28,13 @@ Options:
   -f, --force                强制创建项目
   -h, --help                 display help for command
 
- yarn create soda-app <template> 
+ yarn create lemon-app <template> 
 ```
 
 ### 按模板创建项目
 
 ```bash
-$ yarn create soda-app -t react
+$ yarn create lemon-app -t react
 ```
 
 ### 强制覆盖
@@ -44,5 +44,5 @@ $ yarn create soda-app -t react
 :::
 
 ```bash
-$ yarn create soda-app -f my-demo
+$ yarn create lemon-app -f my-demo
 ```

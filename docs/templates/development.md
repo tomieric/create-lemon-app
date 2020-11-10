@@ -1,6 +1,6 @@
 # 模板开发
 
-`create-soda-app` 与 `vue-cli` 中的 `Preset` 相同的对话，我们在模板目录中新建`prompts.js`, 在创建模板时即可调用。对话内部是通过 [inquirer](https://github.com/SBoudrias/Inquirer.js) 实现
+`create-lemon-app` 与 `vue-cli` 中的 `Preset` 相同的对话，我们在模板目录中新建`prompts.js`, 在创建模板时即可调用。对话内部是通过 [inquirer](https://github.com/SBoudrias/Inquirer.js) 实现
 
 例如，直接是问题数组：
 
@@ -78,4 +78,4 @@ module.exports = pkg => {
 
 ### 输出变量
 
-使用 `<%= 变量 %>` 来输出收集的配置，还可以通过 `<% if (变量) {%>` 判断语句进行选择，具体参考[template-vue](https://github.com/tomieric/create-soda-app/preset/template-vue)
+使用 `<%= 变量 %>` 来输出收集的配置，还可以通过 `<% if (变量) {%>` 判断语句进行选择，具体参考[template-vue](https://github.com/tomieric/create-lemon-app/preset/template-vue)

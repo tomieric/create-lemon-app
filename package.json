@@ -1,10 +1,10 @@
 {
-  "name": "create-soda-app",
+  "name": "create-lemon-app",
   "version": "1.0.3",
   "description": "",
   "main": "index.js",
   "bin": {
-    "soda-app": "index.js"
+    "lemon-app": "index.js"
   },
   "scripts": {
     "deploy": "cd docs && npm install && npm run build",
@@ -24,7 +24,7 @@
   ],
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/tomieric/create-soda-app.git"
+    "url": "git+https://github.com/tomieric/create-lemon-app.git"
   },
   "author": "tomieric",
   "license": "MIT",

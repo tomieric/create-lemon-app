@@ -1,11 +1,11 @@
-# create-soda-app
+# create-lemon-app
 
-![soda](./docs/.vitepress/public/images/logo.png)
+![lemon](./docs/.vitepress/public/images/logo.png)
 
 快速创建前端 App 项目，参照[create-vite-app](https://github.com/vitejs/create-vite-app)和 `vue-cli preset`。
 
 ```
-$ yarn create soda-app <project-name>
+$ yarn create lemon-app <project-name>
 $ cd <project-name>
 $ yarn
 $ yarn dev
@@ -33,7 +33,7 @@ To scaffold with specific template:
 选择创建模板:
 
 ```
-yarn create soda-app --template vite
+yarn create lemon-app --template vite
 ```
 
 ---
