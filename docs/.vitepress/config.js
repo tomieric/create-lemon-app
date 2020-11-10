@@ -1,11 +1,11 @@
 const isProd = process.env.NODE_ENV === 'production'
 module.exports = {
-  title: "create-nice-app",
+  title: "create-soda-app",
   description: "前端项目脚手架模板",
-  base: isProd ? '/create-nice-app' : '',
+  base: isProd ? '/create-soda-app' : '',
   assetsDir: '',
   themeConfig: {
-    repo: 'tomieric/create-nice-app',
+    repo: 'tomieric/create-soda-app',
     logo: '/images/logo.png',
     docsDir: 'docs',
     search: true,
@@ -21,7 +21,7 @@ module.exports = {
       },
       {
         text: 'Release Notes',
-        link: 'https://github.com/tomieric/create-nice-app/releases'
+        link: 'https://github.com/tomieric/create-soda-app/releases'
       }
     ],
 
@@ -63,7 +63,7 @@ module.exports = {
           },
           {
             text: 'Release Notes',
-            link: 'https://github.com/tomieric/create-nice-app/blob/master/CHANGELOG.md'
+            link: 'https://github.com/tomieric/create-soda-app/blob/master/CHANGELOG.md'
           }
         ],
         sidebar: {
@@ -123,12 +123,12 @@ module.exports = {
   locales: {
     '/': {
       lang: 'zh-CN',
-      title: 'create-nice-app',
+      title: 'create-soda-app',
       description: '快速创建前端项目'
     },
     '/en/': {
       lang: 'en-US',
-      title: 'create-nice-app',
+      title: 'create-soda-app',
       description: 'Quick to create an app'
     }
   }

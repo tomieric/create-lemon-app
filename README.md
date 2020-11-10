@@ -1,11 +1,11 @@
-# create-nice-app
+# create-soda-app
 
-Create an app inspired by [create-vite-app](https://github.com/vitejs/create-vite-app),the `nice` just a name about my favorite brand.
+![soda](./docs/.vitepress/public/images/logo.png)
 
 快速创建前端 App 项目，参照[create-vite-app](https://github.com/vitejs/create-vite-app)和 `vue-cli preset`。
 
 ```
-$ yarn create nice-app <project-name>
+$ yarn create soda-app <project-name>
 $ cd <project-name>
 $ yarn
 $ yarn dev
@@ -33,7 +33,7 @@ To scaffold with specific template:
 选择创建模板:
 
 ```
-yarn create nice-app --template vite
+yarn create soda-app --template vite
 ```
 
 ---
