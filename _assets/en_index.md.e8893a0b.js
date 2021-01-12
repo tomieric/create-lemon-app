@@ -1,0 +1,1 @@
+import{g as t,f as e}from"./common-6471c023.js";const r='{"title":"","frontmatter":{},"relativePath":"en/index.md","lastUpdated":1610420024155.7734}';var a={};a.render=function(r,a,n,o,d,i){return e(),t("div")};export default a;export{r as __pageData};

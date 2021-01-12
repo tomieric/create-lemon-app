@@ -1,0 +1,1 @@
+import{g as i,f as l,C as e}from"./common-6471c023.js";const t='{"title":"模板","frontmatter":{},"relativePath":"templates/index.md","lastUpdated":1610420024155.7734}';var a={};const r=e('',3);a.render=function(e,t,a,n,o,u){return l(),i("div",null,[r])};export default a;export{t as __pageData};
