@@ -454,8 +454,8 @@ dotgitignore@^2.1.0:
     minimatch "^3.0.4"
 
 ejs@^3.1.5:
-  version "3.1.5"
-  resolved "https://registry.npmjs.org/ejs/-/ejs-3.1.5.tgz#aed723844dc20acb4b170cd9ab1017e476a0d93b"
+  version "3.1.6"
+  resolved "https://registry.yarnpkg.com/ejs/-/ejs-3.1.6.tgz#5bfd0a0689743bb5268b3550cceeebbc1702822a"
   dependencies:
     jake "^10.6.1"
 
