@@ -635,8 +635,8 @@ glob@^7.0.0:
     path-is-absolute "^1.0.0"
 
 globby@^11.0.1:
-  version "11.0.2"
-  resolved "https://registry.yarnpkg.com/globby/-/globby-11.0.2.tgz#1af538b766a3b540ebfb58a32b2e2d5897321d83"
+  version "11.0.4"
+  resolved "https://registry.yarnpkg.com/globby/-/globby-11.0.4.tgz#2cbaff77c2f2a62e71e9b2813a67b97a3a3001a5"
   dependencies:
     array-union "^2.1.0"
     dir-glob "^3.0.1"
